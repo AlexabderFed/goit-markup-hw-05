@@ -46,7 +46,7 @@
         <section class="hero">
             <div class="conteiner">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="hero-button" type="button">Заказать услугу</button>
+                    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
          </section>
 
@@ -79,12 +79,32 @@
         <h2 class="work-example-title">Чем мы занимаемся</h2>
             <ul class="example-images list">
                 <div class="images-box">
-                <li class="item"><img src="./images/img.jpg" alt="клавиатура и планшет" width="370"/></li>
-                <li class="item"><img src="./images/img-2.jpg" alt="смартфон и ноутбук" width="370"/></li>
-                <li class="item"><img src="./images/img-3.jpg" alt="планшет" width="370"/></li>
+                <li class="item">
+                    <div class="example-thumb">
+                    <img src="./images/img.jpg" alt="клавиатура и планшет" width="370"/>
+                    <div class="example-content">
+                    <h3 class="example-title">Декстопные приложения</h3>
+                    </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="example-thumb">
+                    <img src="./images/img-2.jpg" alt="смартфон и ноутбук" width="370"/>
+                    <div class="example-content">
+                        <h3 class="example-title">Мобильные приложения</h3>
+                    </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="example-thumb">
+                    <img src="./images/img-3.jpg" alt="планшет" width="370"/>
+                    <div class="example-content">
+                        <h3 class="example-title">Дизайнерские решения</h3>
+                    </div>
+                    </div>
+                </li>
                 </div>
             </ul>
-            
         </div>
     </section>
 
@@ -358,6 +378,17 @@
         </div>
         </div>
     </footer>
+    <!-- Модальное Окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
